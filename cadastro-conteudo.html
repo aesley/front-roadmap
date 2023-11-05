@@ -18,12 +18,9 @@
                     navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/listacursos.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about-us.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact-us.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Gestão.html">Gestão</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cadastro-conteudo.html">Cadastro</a></li>
+                    <button id="logoutButton">Logout</button>
                 </ul>
             </div>
         </div>
@@ -37,22 +34,21 @@
                 </div>
                 <form id="register" method="post">
                     <div class="mb-3"><label class="form-label" for="name">Nome do curso</label><input
-                            class="form-control item" type="text" id="name" data-bs-theme="light"></div>
+                            class="form-control item" type="text" id="name" data-bs-theme="light" required></div>
                     <div class="mb-3"><label class="form-label" for="description">Descrição do curso</label><input
-                            class="form-control item" type="text" id="description" data-bs-theme="light"></div>
+                            class="form-control item" type="text" id="description" data-bs-theme="light" required></div>
                     <div class="mb-3"><label class="form-label" for="link">Link do curso</label><input
-                            class="form-control item" type="url" id="link" data-bs-theme="light"></div>
+                            class="form-control item" type="url" id="link" data-bs-theme="light" required></div>
                     <div>
                         <label class="form-label" for="category">Categoria</label>
                         <select class="form-control" id="category" required="required">
-                            <option>Selecione a Categoria do Curso</option>
-                            <option>Eletroportáteis</option>
-                            <option>Beleza</option>
-                            <option>Hardware</option>
-                            <option>Smartphone</option>
-                            <option>Esporte</option>
-                            <option>Áudio</option>
+                            <option value="" selected disabled>Selecione a Categoria do Curso</option>
+                            <option value="Lógica de Programação">Logica de Programação</option>
+                            <option value="Linguagem de Programação">Linguagem de Programação</option>
+                            <option value="Programação orientada a objetos">Programação orientada a objetos</option>
+                            <option value="Sistema de controle de versão">Sistema de controle de versão</option>
                         </select>
+                        
                         <br>
                     </div>
                     <button class="btn btn-primary" type="submit">Cadastrar</button>
@@ -69,6 +65,8 @@
     <script src="/assets/js/script.min.js?h=ac5588de9963f183aa07acbadabcdf04"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/cadastro-conteudo.js"></script>
+    
+    
 </body>
 
 </html>

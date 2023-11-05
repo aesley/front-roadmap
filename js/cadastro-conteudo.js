@@ -3,13 +3,7 @@ const register = document.getElementById("register")
 
 register.addEventListener("submit", async function (event) {
     event.preventDefault()
-
-    let category = document.getElementById("category").selectedIndex
-    if (category == 0) {
-        alert('Por favor, selecione uma categoria!');
-        event.preventDefault(); // Impede o envio do formulário se a categoria não estiver selecionada
-    }
-    
+  
     const data = {
         "name": document.getElementById("name").value,
         "description": document.getElementById("description").value,
