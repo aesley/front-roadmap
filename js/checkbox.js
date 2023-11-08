@@ -10,7 +10,7 @@ function selectAllCheckboxes(source) {
 
 function getSelectedItems() {
     let selectedCheckboxes = document.querySelectorAll('.row-checkbox:checked');
-    let selectedItems = Array.from(selectedCheckboxes).map(cb => cb.value);
+    let selectedItems = Array.from(selectedCheckboxes).map(cb => cb.id);
     return selectedItems;
 }
 
@@ -20,8 +20,15 @@ function alterSelectedItems() {
         alert('Por favor, selecione os itens que deseja alterar.');
         return;
     }
-    console.log('Alterando itens com IDs:', selectedItems);
     // Implemente aqui a lógica de alteração.
+    const curso = {
+        id: selectedItems[0],
+        name: document.getElementById(selectedItems[0]+"0").innerHTML,
+        description: document.getElementById(selectedItems[0]+"1").innerHTML,
+        link: document.getElementById(selectedItems[0]+"2").innerHTML,
+        category: document.getElementById(selectedItems[0]+"3").innerHTML
+    }
+    sessionStorage.setItem('curso', JSON.stringify(curso))
 }
 
 function removeSelectedItems() {
