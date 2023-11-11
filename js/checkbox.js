@@ -23,7 +23,7 @@ function alterSelectedItems() {
         id: selectedItems[0],
         name: document.getElementById(selectedItems[0] + "0").innerHTML,
         description: document.getElementById(selectedItems[0] + "1").innerHTML,
-        link: document.getElementById(selectedItems[0] + "2").innerHTML,
+        link: document.getElementById(selectedItems[0] + "2").href,
         category: document.getElementById(selectedItems[0] + "3").innerHTML
     }
     sessionStorage.setItem('courseEdit', JSON.stringify(course))
@@ -51,7 +51,7 @@ async function deleteCourse(itemsId) {
         headers: {
             "X-Parse-Application-Id": "idmPVCIXOieMmYRGDSRQUvu5ypZ7GwH2uDak2wuP",
             "X-Parse-REST-API-Key": "5KkqmnO0dmtt5f4NFW8natJWxLx7W7dSjb5oxvAS",
-            "X-Parse-Session-Token": "r:97f4923fb6b3645b1ff77c57a0069093",
+            "X-Parse-Session-Token": sessionStorage.getItem('sessionToken'),
             "Content-Type": "application/json"
         }
     }

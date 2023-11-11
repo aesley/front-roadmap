@@ -15,7 +15,7 @@ register.addEventListener("submit", async function (event) {
         headers: {
             "X-Parse-Application-Id": "idmPVCIXOieMmYRGDSRQUvu5ypZ7GwH2uDak2wuP",
             "X-Parse-REST-API-Key": "5KkqmnO0dmtt5f4NFW8natJWxLx7W7dSjb5oxvAS",
-            "X-Parse-Session-Token": "r:97f4923fb6b3645b1ff77c57a0069093",
+            "X-Parse-Session-Token": sessionStorage.getItem('sessionToken'),
             "Content-Type": "application/json"
         }
     }
