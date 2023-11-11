@@ -31,8 +31,8 @@ function getObjs(objs) {
         let input = document.createElement('input')
         input.type = "checkbox"
         input.className = "row-checkbox"
+        input.id = o.objectId
         td.appendChild(input)
-        td.id = o.objectId
         tr.appendChild(td)
 
         td = document.createElement('td')

@@ -26,6 +26,7 @@ loginForm.addEventListener("submit", async function (event) {
     await axios.post(loginUrl, data, headers)
         .then(response => {
             console.log(response)
+            document.location.href = "/html/gestao-conteudo.html"
         })
         .catch(error => {
             console.log(error)
