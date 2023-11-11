@@ -22,8 +22,8 @@ register.addEventListener("submit", async function (event) {
 
     await axios.post(url, data, headers)
         .then(response => {
-            alert("Produto Cadastrado com Sucesso!")
-            console.log(response)
+            alert("Curso Cadastrado com Sucesso!")
+            document.location.href = "/html/gestao-conteudo.html"
         })
         .catch(error => {
             console.log(error)
