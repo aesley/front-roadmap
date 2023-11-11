@@ -27,5 +27,6 @@ register.addEventListener("submit", async function (event) {
         })
         .catch(error => {
             console.log(error)
+            document.location.href = "/html/login.html"
         })
 })

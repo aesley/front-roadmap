@@ -27,6 +27,7 @@ loginForm.addEventListener("submit", async function (event) {
             document.location.href = "/html/gestao-conteudo.html"
         })
         .catch(error => {
+            alert("Dados Inválidos!")
             console.log(error)
         })
 

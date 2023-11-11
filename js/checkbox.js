@@ -64,6 +64,7 @@ async function deleteCourse(itemsId) {
         )
         .catch(error => {
             console.log(error)
+            document.location.href = "/html/login.html"
         })
     }
     window.location.reload()
