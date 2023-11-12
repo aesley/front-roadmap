@@ -10,13 +10,32 @@ const headers = {
 }
 
 async function axiosGet(tbodyId) {
-    await axios.get(url, headers)
+    await axios.get(`${url}?where={"category":"${setParams(tbodyId)}"}`, headers)
         .then(response => {
             getObjs(response.data.results, tbodyId)
         })
         .catch(error => {
             console.log(error)
         })
+}
+
+function setParams(tbodyId) {
+    if (tbodyId == 'cursos_logica') {
+        const params = "Lógica de programação"
+        return params
+    }
+    if (tbodyId == 'cursos_programacao') {
+        const params = "Linguagem de programação"
+        return params
+    }
+    if (tbodyId == 'cursos_poo') {
+        const params = "Programação orientada a objetos"
+        return params
+    }
+    if (tbodyId == 'cursos_git') {
+        const params = "Sistema de controle de versão"
+        return params
+    }
 }
 
 function getObjs(objs, tbodyId) {
