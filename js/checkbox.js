@@ -56,6 +56,8 @@ async function deleteCourse(itemsId) {
         }
     }
     
+    let err = true
+    
     for (i = 0; i < itemsId.length; i++) {
         await axios.delete(`${url}/${itemsId[i]}`, headers)
         .then(() => {
@@ -63,10 +65,13 @@ async function deleteCourse(itemsId) {
         }
         )
         .catch(error => {
+            err = false
             console.log(error)
             document.location.href = "/html/login.html"
         })
     }
-    window.location.reload()
+    if (err) {
+        window.location.reload()
+    }
 }
 
