@@ -9,40 +9,27 @@ const headers = {
     }
 }
 
-async function axiosGet() {
+async function axiosGet(tbodyId) {
     await axios.get(url, headers)
         .then(response => {
-            getObjs(response.data.results)
+            getObjs(response.data.results, tbodyId)
         })
         .catch(error => {
             console.log(error)
         })
 }
 
-function getObjs(objs) {
-    const tbody = document.getElementById('cursos_gestao')
+function getObjs(objs, tbodyId) {
+    const tbody = document.getElementById(tbodyId)
     for (o of objs) {
 
         const tr = document.createElement('tr')
         tr.className = "align-middle"
         tr.id = o.objectId
 
-        let td = document.createElement('td')
-        let input = document.createElement('input')
-        input.type = "checkbox"
-        input.className = "row-checkbox"
-        input.id = o.objectId
-        td.appendChild(input)
-        tr.appendChild(td)
-
         td = document.createElement('td')
         td.id = o.objectId + "0"
         td.innerHTML = o.name
-        tr.appendChild(td)
-
-        td = document.createElement('td')
-        td.id = o.objectId + "1"
-        td.innerHTML = o.description
         tr.appendChild(td)
 
         td = document.createElement('td')
@@ -52,11 +39,6 @@ function getObjs(objs) {
         a.href = o.link
         a.innerHTML = "Link"
         td.appendChild(a)
-        tr.appendChild(td)
-
-        td = document.createElement('td')
-        td.id = o.objectId + "3"
-        td.innerHTML = o.category
         tr.appendChild(td)
 
         tbody.appendChild(tr)
