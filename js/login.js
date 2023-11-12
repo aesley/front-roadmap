@@ -5,9 +5,7 @@ const loginForm = document.getElementById("login")
 loginForm.addEventListener("submit", async function (event) {
     event.preventDefault()
     const username = document.getElementById("username")
-    console.log(username.value)
     const password = document.getElementById("password")
-    console.log(password.value)
 
     const data = {
             "username": username.value,
@@ -25,12 +23,12 @@ loginForm.addEventListener("submit", async function (event) {
 
     await axios.post(loginUrl, data, headers)
         .then(response => {
-            console.log(response)
+            sessionStorage.setItem('sessionToken', response.data.sessionToken)
             document.location.href = "/html/gestao-conteudo.html"
         })
         .catch(error => {
+            alert("Dados Inválidos!")
             console.log(error)
-            console.log(data)
         })
 
 })

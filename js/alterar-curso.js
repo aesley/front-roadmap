@@ -21,18 +21,19 @@ register.addEventListener("submit", async function (event) {
         headers: {
             "X-Parse-Application-Id": "idmPVCIXOieMmYRGDSRQUvu5ypZ7GwH2uDak2wuP",
             "X-Parse-REST-API-Key": "5KkqmnO0dmtt5f4NFW8natJWxLx7W7dSjb5oxvAS",
-            "X-Parse-Session-Token": "r:97f4923fb6b3645b1ff77c57a0069093",
+            "X-Parse-Session-Token": sessionStorage.getItem('sessionToken'),
             "Content-Type": "application/json"
         }
     }
 
     await axios.put(`${url}/${courseEdit.id}`, courseEdit, headers)
         .then(() => {
-            alert("Produto Atualizado!")
+            alert("Curso Atualizado!")
             document.location.href = "/html/gestao-conteudo.html"
         })
         .catch(error => {
             console.log(error)
+            document.location.href = "/html/login.html"
         })
 
 })
@@ -44,5 +45,5 @@ function dataEdit() {
     name.value = courseEdit.name
     description.value = courseEdit.description
     link.value = courseEdit.link
-    category.selected = courseEdit.category
+    category.value = courseEdit.category
 }

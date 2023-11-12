@@ -22,10 +22,10 @@
                     navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/html/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/html/gestao-conteudo.html">Gestão</a></li>
                     <li class="nav-item"><a class="nav-link" href="/html/cadastro-conteudo.html">Cadastro</a></li>
-                    <button id="logoutButton">Logout</button>
+                    <button class="btn btn-secondary" id="logoutButton" onclick="clearToken()">Logout</button>
                 </ul>
             </div>
         </div>
@@ -37,8 +37,8 @@
                     <h1>Gestão de Cursos</h1><!-- Start: Table With Search -->
                     <div class="col-md-12 search-table-col">
                         <div>
-                            <button onclick="alterSelectedItems()">Alterar Selecionados</button>
-                            <button onclick="removeSelectedItems()">Remover Selecionados</button>
+                            <button class="btn btn-outline-secondary" onclick="alterSelectedItems()">Alterar Selecionados</button>
+                            <button class="btn btn-outline-secondary" onclick="removeSelectedItems()">Remover Selecionados</button>
                         </div>
                         <br>
                         <div id="gestao-conteudo" class="table-responsive">
@@ -73,7 +73,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/js/checkbox.js"></script>
-    <script src="/js/lista-cursos-gestão.js"></script>   
+    <script src="/js/lista-cursos-gestão.js"></script>
+    <script src="/js/logout.js"></script>
 </body>
 
 </html>

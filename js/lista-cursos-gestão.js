@@ -10,12 +10,13 @@ const headers = {
 }
 
 async function axiosGet() {
-    axios.get(url, headers)
+    await axios.get(url, headers)
         .then(response => {
             getObjs(response.data.results)
         })
         .catch(error => {
             console.log(error)
+            document.location.href = "/html/login.html"
         })
 }
 
@@ -46,8 +47,12 @@ function getObjs(objs) {
         tr.appendChild(td)
 
         td = document.createElement('td')
-        td.id = o.objectId + "2"
-        td.innerHTML = o.link
+        let a = document.createElement('a')
+        a.id = o.objectId + "2"
+        a.className = "btn btn-info btn-sm"
+        a.href = o.link
+        a.innerHTML = "Link"
+        td.appendChild(a)
         tr.appendChild(td)
 
         td = document.createElement('td')
