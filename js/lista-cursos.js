@@ -9,40 +9,46 @@ const headers = {
     }
 }
 
-async function axiosGet() {
-    await axios.get(url, headers)
+async function axiosGet(tbodyId) {
+    await axios.get(`${url}?where={"category":"${setParams(tbodyId)}"}`, headers)
         .then(response => {
-            getObjs(response.data.results)
+            getObjs(response.data.results, tbodyId)
         })
         .catch(error => {
             console.log(error)
         })
 }
 
-function getObjs(objs) {
-    const tbody = document.getElementById('cursos_gestao')
+function setParams(tbodyId) {
+    if (tbodyId == 'cursos_logica') {
+        const params = "Lógica de programação"
+        return params
+    }
+    if (tbodyId == 'cursos_programacao') {
+        const params = "Linguagem de programação"
+        return params
+    }
+    if (tbodyId == 'cursos_poo') {
+        const params = "Programação orientada a objetos"
+        return params
+    }
+    if (tbodyId == 'cursos_git') {
+        const params = "Sistema de controle de versão"
+        return params
+    }
+}
+
+function getObjs(objs, tbodyId) {
+    const tbody = document.getElementById(tbodyId)
     for (o of objs) {
 
         const tr = document.createElement('tr')
         tr.className = "align-middle"
         tr.id = o.objectId
 
-        let td = document.createElement('td')
-        let input = document.createElement('input')
-        input.type = "checkbox"
-        input.className = "row-checkbox"
-        input.id = o.objectId
-        td.appendChild(input)
-        tr.appendChild(td)
-
         td = document.createElement('td')
         td.id = o.objectId + "0"
         td.innerHTML = o.name
-        tr.appendChild(td)
-
-        td = document.createElement('td')
-        td.id = o.objectId + "1"
-        td.innerHTML = o.description
         tr.appendChild(td)
 
         td = document.createElement('td')
@@ -52,11 +58,6 @@ function getObjs(objs) {
         a.href = o.link
         a.innerHTML = "Link"
         td.appendChild(a)
-        tr.appendChild(td)
-
-        td = document.createElement('td')
-        td.id = o.objectId + "3"
-        td.innerHTML = o.category
         tr.appendChild(td)
 
         tbody.appendChild(tr)
