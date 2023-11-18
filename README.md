@@ -3,11 +3,11 @@
 
 ### Integrantes <h3>
 <p>
-* Aesley Soares Nobre
-* Antonieta Xavier
-* Antonio Everton Gomes
-* Eduardo Borges Cavalcante
-* Fernanda Enayle Angelim
+* Aesley Soares Nobre <br>
+* Antonieta Xavier <br>
+* Antonio Everton Gomes <br>
+* Eduardo Borges Cavalcante <br>
+* Fernanda Enayle Angelim <br>
 * João Anderson De Assis Freitas
 </p>
 
