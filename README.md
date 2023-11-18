@@ -23,6 +23,14 @@ atividades interessantes para serem compartilhadas com a
 Universidade todo.
 </p>
 
-![ADS-FREE_page-0001](https://github.com/aesley/front-roadmap/assets/95926189/37772a78-342b-4862-8e50-5b095c94eb77)
+![image](https://github.com/aesley/front-roadmap/assets/95926189/f5f7a7ea-c662-434b-bea8-d1e17a993e23)
+
+![image](https://github.com/aesley/front-roadmap/assets/95926189/491010ae-a24a-4afe-8a72-c01d1a4e1da9)
+
+![image](https://github.com/aesley/front-roadmap/assets/95926189/29e81aae-3373-4cc0-8ed3-678f57d68666)
+
+![image](https://github.com/aesley/front-roadmap/assets/95926189/23e1174b-8946-4416-b3e7-50064fb644ff)
+
+
 
 
