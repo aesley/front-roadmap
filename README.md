@@ -2,14 +2,14 @@
 ## ATIVIDADE FINAL N702 - PROJETO APLICADO DE DESENVOLVIMENTO DE SOFTWARE <h2>
 
 ### Integrantes <h3>
-<p>
+
 * Aesley Soares Nobre <br>
 * Antonieta Xavier <br>
 * Antonio Everton Gomes <br>
 * Eduardo Borges Cavalcante <br>
 * Fernanda Enayle Angelim <br>
 * João Anderson De Assis Freitas
-</p>
+
 
 <p>Fomentar uma Mostra de Projetos cuja finalidade é apresentar aos
 docentes, discentes e comunidade acadêmica em geral o portfólio
