@@ -15,8 +15,8 @@
 <img align="center" alt="CSS" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3">
 <img align="center" alt="Bootstrap" height="40" width="58" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" title="Bootstrap">
 <img align="center" alt="Back4app" height="40" width="40" src="https://alternative.me/media/256/back4app-icon-dqgun7s94k5vpprg-c.png" title="Back4app">
-<img align="center" alt="Axios" height="60" width="120" src="https://user-images.githubusercontent.com/43313420/105883616-57dbeb00-6007-11eb-9df2-de0e2a42655c.png" title="Axios">
-<img align="center" alt="Vercel" height="60" width="80" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/emsbo1jy8jh91vvohwrj.jpeg" title="Vercel">
+<img align="center" alt="Axios" height="80" width="100" src="https://user-images.githubusercontent.com/43313420/105883616-57dbeb00-6007-11eb-9df2-de0e2a42655c.png" title="Axios">
+<img align="center" alt="Vercel" height="80" width="80" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/emsbo1jy8jh91vvohwrj.jpeg" title="Vercel">
 
 </p>
 <p>Fomentar uma Mostra de Projetos cuja finalidade é apresentar aos
