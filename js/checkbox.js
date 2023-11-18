@@ -43,6 +43,19 @@ function removeSelectedItems() {
 
 }
 
+function removeSelectedMessages() {
+    let selectedItems = getSelectedItems()
+    if (selectedItems.length === 0) {
+        alert('Por favor, selecione um ou mais itens.')
+        return
+    }
+    let response = confirm("Tem certeza que deseja excluir os itens selecionados?")
+    if (response) {
+        deleteMessages(selectedItems)
+    }
+
+}
+
 async function deleteCourse(itemsId) {
 
     const url = "https://parseapi.back4app.com/parse/classes/Courses"
@@ -75,3 +88,34 @@ async function deleteCourse(itemsId) {
     }
 }
 
+async function deleteMessages(itemsId) {
+
+    const url = "https://parseapi.back4app.com/parse/classes/FormSubmission"
+    
+    const headers = {
+        headers: {
+            "X-Parse-Application-Id": "idmPVCIXOieMmYRGDSRQUvu5ypZ7GwH2uDak2wuP",
+            "X-Parse-REST-API-Key": "5KkqmnO0dmtt5f4NFW8natJWxLx7W7dSjb5oxvAS",
+            "X-Parse-Session-Token": sessionStorage.getItem('sessionToken'),
+            "Content-Type": "application/json"
+        }
+    }
+    
+    let err = true
+    
+    for (i = 0; i < itemsId.length; i++) {
+        await axios.delete(`${url}/${itemsId[i]}`, headers)
+        .then(() => {
+            console.log("Item Id "+itemsId[i]+" excluido.")
+        }
+        )
+        .catch(error => {
+            err = false
+            console.log(error)
+            document.location.href = "/html/login.html"
+        })
+    }
+    if (err) {
+        window.location.reload()
+    }
+}
