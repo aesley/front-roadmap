@@ -9,13 +9,13 @@
 * Eduardo Borges Cavalcante <br>
 * Fernanda Enayle Angelim <br>
 * João Anderson De Assis Freitas
-
+<p>
 <img display="inline" align="center" alt="Js" height="40" width="50" title="Javascript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 <img align="center" alt="HTML" height="40" title="HTML5"  width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
 <img align="center" alt="CSS" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3">
 <img align="center" alt="Bootstrap" height="40" width="58" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" title="Bootstrap">
 <img align="center" alt="Back4app" height="40" width="58" src="https://alternative.me/media/256/back4app-icon-dqgun7s94k5vpprg-c.png" title="Back4app">
-
+</p>
 <p>Fomentar uma Mostra de Projetos cuja finalidade é apresentar aos
 docentes, discentes e comunidade acadêmica em geral o portfólio
 de trabalhos oriundos de diversos projetos e atividades
