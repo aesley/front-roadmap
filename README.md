@@ -1,5 +1,16 @@
 # front-roadmap <h1>
 ## ATIVIDADE FINAL N702 - PROJETO APLICADO DE DESENVOLVIMENTO DE SOFTWARE <h2>
+
+### Integrantes <h3>
+<p>
+* Aesley Soares Nobre
+* Antonieta Xavier
+* Antonio Everton Gomes
+* Eduardo Borges Cavalcante
+* Fernanda Enayle Angelim
+* João Anderson De Assis Freitas
+</p>
+
 <p>Fomentar uma Mostra de Projetos cuja finalidade é apresentar aos
 docentes, discentes e comunidade acadêmica em geral o portfólio
 de trabalhos oriundos de diversos projetos e atividades
